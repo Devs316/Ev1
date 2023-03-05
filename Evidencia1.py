@@ -31,8 +31,6 @@ elif (Consultas_y_reportes == 2):
          print("Consultas y reportes 2")
 elif (Salir == 3):
              print("Salir 3")
-else:
-                 print("")
 
 
 else:
