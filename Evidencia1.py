@@ -29,13 +29,13 @@ if opción == 1:
         "titulo": titulo,
         "autor": autor,
         "genero": genero,
-        "anio": año_publicacion,
+        "año": año_publicacion,
         "isbn": isbn,
         "fecha": fecha_adquisicion
     }
-    ejemplares.append(ejemplar)
-    print("Ejemplar registrado con éxito.")
-    print("ID del ejemplar:", identificador)
+    libros.append(elibro)
+    print("Libro registrado con éxito.")
+    print("ID del libro:", identificador)
 
     libros.append(libro)
     print("Libro registrado con éxito.")
@@ -54,7 +54,7 @@ elif opción == 2:
         libros_encontrados = []
         for libro in libros:
             if libros["titulo"] == titulo_busqueda:
-                libros_encontrados.append(ejemplar)
+                libros_encontrados.append(libro)
         
     
 
