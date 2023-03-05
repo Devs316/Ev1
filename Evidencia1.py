@@ -129,7 +129,7 @@
    print(f"No se encontraron libros del autor '{autor_seleccionado}' en el catálogo.")
                     
    else:
-   print(f"Libros del autor '{autor_seleccionado}':")
+   print(f"libros del autor '{autor_seleccionado}':")
    print("ID\tTÍTULO\t\t\tAUTOR\t\t\tGÉNERO\t\tAÑO\tISBN\t\tFECHA")
    for libros in catalogo:
    if libro['autor'] == autor_seleccionado:
