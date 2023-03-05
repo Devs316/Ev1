@@ -1,3 +1,5 @@
+import datetime
+
 print("*" *10 + " BIENVENIDO " + "*" *10)
 
 while True:
@@ -18,12 +20,11 @@ if opción == 1:
     fecha_adquisicion = input("Ingrese la fecha de su evento  (dd/mm/aaaa): ")
     fecha_adquisicion = datetime.datatime.striptime(fecha_adquisicion,"%d/%m/%Y").date()
 
-elif opción== 2:
+elif opción == 2:
     print("1. Consulta de titulo")
     print("2. Reportes")
     print("3. Volver al menu de consultas y reportes")
-    
-elif opción== 3:
+
+elif opción == 3:
     print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE EJEMPLARES")
-  
 break
