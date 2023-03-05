@@ -43,40 +43,13 @@ if opción == 1:
     
 elif opción == 2:
     while True:   
-        print('******** CONSULTAS ********')
+        print('******** CONSULTAS Y REPORTES ********')
         print("Buscar libro por:")
         print("1. Título")
         print("2. ISBN")
-
-    catalogo = []
-autores = set()
-generos = set()
-def registrar_libro():
-    titulo = input("Ingrese el título del libro: ").upper()
-    autor = input("Ingrese el nombre del autor: ").upper()
-    autores.add(autor)
-    genero = input("Ingrese el género del libro: ").upper()
-    generos.add(genero)
-    anio = input("Ingrese el año de publicación: ")
-    isbn = input("Ingrese el ISBN del libro: ")
-    fecha = input("Ingrese la fecha de adquisición (dd/mm/aaaa): ")
-    ejemplar = {
-      "id": len(catalogo) + 1,
-        "titulo": titulo,
-        "autor": autor,
-        "genero": genero,
-        "anio": anio,
-        "isbn": isbn,
-        "fecha": fecha
-    }
-    catalogo.append(ejemplar)
-    print("El libro se ha registrado con éxito.")
-    def consultar_catalogo():
-    if len(catalogo) == 0:
-        print("No hay libros registrados en el catálogo.")
-    else:
-
-    opcion = input("Opción: ")
+        print("3.Reportes")
+    opcion_submenu =int(input("Opción\n: "))
+    
     if opcion == "1":
         titulo_busqueda = input("Ingrese el título: ").upper()
         libros_encontrados = []
@@ -117,6 +90,18 @@ elif opcion == "2":
                 break
     else:
         print("No se encontraron libros con ese ISBN.")
+
+    catalogo = []
+    autores = set()
+    generos = set()
+    def consultar_catalogo():
+        if len(catalogo) == 0:
+            print("No hay libros registrados en el catálogo.")
+        else:
+            print("ID\tTÍTULO\t\t\tAUTOR\t\t\tGÉNERO\t\tAÑO\tISBN\t\tFECHA")
+            for libro in catalogo:
+                print(f"{libro['id']}\t{libro['titulo'][:20]}\t{libro['autor'][:20]}\t{libro['genero']}\t\t{libro['año']}\t{libro['isbn']}\t{libro['fecha']}")
+    
 
 else:
         print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE LIBROS")
