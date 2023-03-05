@@ -26,3 +26,7 @@ dia_valido = dia_reservado - dia_actual
 
 tupla_reservacion = (mes_reservado, dia_reservado, año_reservado)
 tupla_actual = (mes_actual, dia_actual, año_actual)
+
+if día_valido <= 1:
+print("Para reservar una fecha debe hacerlo con 2 días de anticipación")
+else:
