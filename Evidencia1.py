@@ -8,28 +8,18 @@ while true:
 opción = int(input("Seleccione el número de la acción que desea realizar \n:"))
 
 if opción == 1:
-    print('******** REGISTRO PARA RESERVACION DE UNA SALA ********')
-    nombre_evento = input('Ingrese el nombre de su evento: ')
-    fecha_reservada = input("Ingrese la fecha de su evento  (dd/mm/aaaa): ")
-    fecha_reservada = datetime.datatime.striptime(fecha_reseevada,"%d/%m/%Y").date()
+    print('******** REGISTRO DE NUEVO EJEMPLAR ********')
+    titulo = input('Ingrese el nombre de la obra: ')
+    autor = input('Ingrese el autor de la obra: ')
+    genero = input('Ingrese el genero de la obra: ')
+    año_publicacion=input("Ingrese el año de publicacion: ")
+    año_publicacion = datetime.datatime.striptime(año_publicacion,"%Y").date()   
+    isbn=input("Ingrese el ISBN de la obra: ") 
+    fecha_adquisicion = input("Ingrese la fecha de su evento  (dd/mm/aaaa): ")
+    fecha_adquisicion = datetime.datatime.striptime(fecha_adquisicion,"%d/%m/%Y").date()
 
-    día_reservado = fecha_reservada.day
-    mes_reservado = fecha_reservada.month
-    año_ressevado = fecha_reservada.year
-
-    fecha_actual = datetime.date.today()
-    dia_actual = fecha_actual.day
-    mes_actual = fecha_actual.month
-    año_reseevado = fecha_actual.year
-
-dia_valido = dia_reservado - dia_actual
-
-tupla_reservacion = (mes_reservado, dia_reservado, año_reservado)
-tupla_actual = (mes_actual, dia_actual, año_actual)
-
-if día_valido <= 1:
-print("Para reservar una fecha debe hacerlo con 2 días de anticipación")
-else:
-  if tupla_reservacion > tupla_actual:
-    print("Su reservación a sido exitosa")
- else:
+elif opción== 2:
+    print("1. Consulta de titulo")
+    print("2. Reportes")
+    print("3. Volver al menu de consultas y reportes")
+    
