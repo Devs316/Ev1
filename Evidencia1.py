@@ -65,13 +65,16 @@ elif opción == 2:
                 print("Año de publicación:", libro["anio"])
                 print("ISBN:", libro["isbn"])
                 print("Fecha de adquisición:", libro["fecha"])
-        else:
+                break 
+    else:
         print("No se encontraron libros con ese título.")
-    elif opcion == "2":
-        isbn_busqueda = input("Ingrese el ISBN: ")
-        libros_encontrados = []
-        for libro in libros:
-            if libro["isbn"] == isbn_busqueda:
+     
+
+elif opcion == "2":
+    isbn_busqueda = input("Ingrese el ISBN: ")
+    libros_encontrados = []
+    for libro in libros:
+        if libro["isbn"] == isbn_busqueda:
                 libros_encontrados.append(libro)
     if libros_encontrados:
             print("libros encontrados:")
@@ -83,11 +86,10 @@ elif opción == 2:
                 print("Año de publicación:", libro["anio"])
                 print("ISBN:", libro["isbn"])
                 print("Fecha de adquisición:", libro["fecha"])
-        else:
-    print("No se encontraron libros con ese ISBN.")
+                break
     else:
-        print("Opción inválida.")
+        print("No se encontraron libros con ese ISBN.")
 
 else:
-    print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE LIBROS")
+        print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE LIBROS")
 exit()
