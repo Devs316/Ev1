@@ -10,8 +10,8 @@ while True:
 
    libros = []
   def generar_id():
-     return str(random.randint(100000, 999999))
-   opcion = int(input("Seleccione el número de la acción que desea realizar \n:"))
+   return str(random.randint(100000, 999999))
+  opcion = int(input("Seleccione el número de la acción que desea realizar \n:"))
 
 if opcion == 1:
     print('******** REGISTRO DE NUEVO LIBRO ********')
