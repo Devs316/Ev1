@@ -47,6 +47,7 @@ elif opción == 2:
         print("Buscar libro por:")
         print("1. Título")
         print("2. ISBN")
+        print("3. Volver al menu anterior")
     opcion_submenu =int(input("Opción\n: "))
     
     if opcion == "1":
@@ -92,8 +93,11 @@ elif opcion == "2":
 
     while True:   
         print('******** REPORTES ********')
-        print("1.Reportes")
-        
+        print("1.Catalogo")
+        print("2.Reporte por autor")
+        print("3.Reporte por genero")
+        print("4.Reporte por año de publicacion")
+        print("5.Volver al menu anterior")
     opcion_reportes =int(input("Opción\n: "))
 elif opcion == "1":
 
