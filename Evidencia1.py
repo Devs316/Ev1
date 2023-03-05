@@ -55,6 +55,17 @@ elif opción == 2:
         for libro in libros:
             if libros["titulo"] == titulo_busqueda:
                 libros_encontrados.append(libro)
+    if libros_encontrados:
+            print("libros encontrados:")
+            for libro in libros_encontrados:
+                print("ID:", libro["id"])
+                print("Título:", libro["titulo"])
+                print("Autor:", libro["autor"])
+                print("Género:", libro["genero"])
+                print("Año de publicación:", libro["anio"])
+                print("ISBN:", libro["isbn"])
+                print("Fecha de adquisición:", libro["fecha"])
+        else:
         
     
 
