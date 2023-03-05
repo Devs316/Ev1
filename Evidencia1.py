@@ -1,6 +1,6 @@
 print("*" *10 + " BIENVENIDO " + "*" *10)
 
-while true:
+while True:
     print("1. Registrar nuevo ejemplar")
     print("2. Consultas y reportes")
     print("3. Salir")
@@ -23,3 +23,7 @@ elif opción== 2:
     print("2. Reportes")
     print("3. Volver al menu de consultas y reportes")
     
+elif opción== 3:
+    print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE EJEMPLARES")
+  
+break
