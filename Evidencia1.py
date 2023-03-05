@@ -147,4 +147,6 @@ elif opcion == "2":
 
 else:
         print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE LIBROS")
+while True: 
+   print("Registrar nuevo libro")
 exit()
