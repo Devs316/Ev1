@@ -74,6 +74,10 @@ elif opción == 2:
                 print("ISBN:", libro["isbn"])
                 print("Fecha de adquisición:", libro["fecha"])
                 break 
+
+      while True: 
+   print("Registrar nuevo libro")
+
     else:
         print("No se encontraron libros con ese título.")
      
@@ -95,6 +99,9 @@ elif opcion == "2":
                 print("ISBN:", libro["isbn"])
                 print("Fecha de adquisición:", libro["fecha"])
                 break
+    while True: 
+   print("Registrar nuevo libro")
+
     else:
         print("No se encontraron libros con ese ISBN.")
 
