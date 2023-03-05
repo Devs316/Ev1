@@ -92,7 +92,7 @@ elif opcion == "2":
         print("No se encontraron libros con ese ISBN.")
 
     catalogo = []
-    autores = set()
+    autores = set() 
     generos = set()
     def consultar_catalogo():
         if len(catalogo) == 0:
