@@ -4,7 +4,7 @@ import random
 print("*" *10 + " BIENVENIDO " + "*" *10)
 
 while True:
-    print("Buscar ejemplar por:")
+    print("Buscar libro por:")
     print("1. Título")
     print("2. ISBN")
     opcion = input("Opción: ")
