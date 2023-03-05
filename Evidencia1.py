@@ -43,11 +43,10 @@ if opción == 1:
     
 elif opción == 2:
     while True:   
-        print('******** CONSULTAS Y REPORTES ********')
+        print('******** CONSULTAS ********')
         print("Buscar libro por:")
         print("1. Título")
         print("2. ISBN")
-        print("3.Reportes")
     opcion_submenu =int(input("Opción\n: "))
     
     if opcion == "1":
@@ -91,7 +90,13 @@ elif opcion == "2":
     else:
         print("No se encontraron libros con ese ISBN.")
 
-elif opcion == "3":
+    while True:   
+        print('******** REPORTES ********')
+        print("1.Reportes")
+        
+    opcion_reportes =int(input("Opción\n: "))
+elif opcion == "1":
+
     catalogo = []
     autores = set() 
     generos = set()
