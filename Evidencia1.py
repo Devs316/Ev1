@@ -66,7 +66,13 @@ elif opción == 2:
                 print("ISBN:", libro["isbn"])
                 print("Fecha de adquisición:", libro["fecha"])
         else:
-        
+        print("No se encontraron libros con ese título.")
+    elif opcion == "2":
+        isbn_busqueda = input("Ingrese el ISBN: ")
+        libros_encontrados = []
+        for libro in libros:
+            if libro["isbn"] == isbn_busqueda:
+                libros_encontrados.append(libro)
     
 
 else:
