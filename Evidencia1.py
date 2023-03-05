@@ -7,5 +7,7 @@ print("3, Consulta tus reservas")
 print("4, Registrarte cómo nuevo cliente")
 print("5, Registrar una Sala")
 print("6, Salir")
-
 opción = int(input("Seleccione el número de la acción que quiere realizar \n:"))
+
+if opción == 1:
+print('******** REGISTRO PARA RESERVACION DE UNA SALA ********')
