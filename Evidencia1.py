@@ -1,15 +1,13 @@
 print("*" *10 + " BIENVENIDO " + "*" *10)
 
 while true:
-print("1, Registrar una reserva")
-print("2, Editar un evento ya existente")
-print("3, Consulta tus reservas")
-print("4, Registrarte cómo nuevo cliente")
-print("5, Registrar una Sala")
-print("6, Salir")
-opción = int(input("Seleccione el número de la acción que quiere realizar \n:"))
+    print("1. Registrar nuevo ejemplar")
+    print("2. Consultas y reportes")
+    print("3. Salir")
+   
+opción = int(input("Seleccione el número de la acción que desea realizar \n:"))
 
 if opción == 1:
-print('******** REGISTRO PARA RESERVACION DE UNA SALA ********')
-nombre_evento = input('Ingrese el nombre de su evento: ')
-fecha_reservada = input("Ingrese la fecha de su evento  (dd/mm/aaaa): ")
+    print('******** REGISTRO PARA RESERVACION DE UNA SALA ********')
+    nombre_evento = input('Ingrese el nombre de su evento: ')
+    fecha_reservada = input("Ingrese la fecha de su evento  (dd/mm/aaaa): ")
