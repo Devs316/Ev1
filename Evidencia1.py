@@ -4,16 +4,6 @@ import random
 print("*" *10 + " BIENVENIDO " + "*" *10)
 
 while True:
-    print("Buscar libro por:")
-    print("1. Título")
-    print("2. ISBN")
-    opcion = input("Opción: ")
-    if opcion == "1":
-    titulo_busqueda = input("Ingrese el título: ").upper()
-        libros_encontrados = []
-        for libros in libros:
-            if libros["titulo"] == titulo_busqueda:
-                libros_encontrados.append(ejemplar)
     print("1. Registrar nuevo libro")
     print("2. Consultas y reportes")
     print("3. Salir")
@@ -54,10 +44,18 @@ if opción == 1:
 elif opción == 2:
     while True:   
         print('******** CONSULTAS ********')
-        print("1. Consulta de titulo")
-        print("2. Reportes")
-        print("3. Volver al menu de consultas y reportes")
-    submenu_opcion = int(input("Seleccione el numero de la opcion que quiere elegir \n:" ))
+        print("Buscar libro por:")
+        print("1. Título")
+        print("2. ISBN")
+        
+    opcion = input("Opción: ")
+    if opcion == "1":
+        titulo_busqueda = input("Ingrese el título: ").upper()
+        libros_encontrados = []
+        for libro in libros:
+            if libros["titulo"] == titulo_busqueda:
+                libros_encontrados.append(ejemplar)
+        
     
 
 else:
