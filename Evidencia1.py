@@ -91,6 +91,7 @@ elif opcion == "2":
     else:
         print("No se encontraron libros con ese ISBN.")
 
+elif opcion == "3":
     catalogo = []
     autores = set() 
     generos = set()
