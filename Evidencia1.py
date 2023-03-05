@@ -3,14 +3,14 @@ import datetime
 print("*" *10 + " BIENVENIDO " + "*" *10)
 
 while True:
-    print("1. Registrar nuevo ejemplar")
+    print("1. Registrar nuevo libro")
     print("2. Consultas y reportes")
     print("3. Salir")
    
 opción = int(input("Seleccione el número de la acción que desea realizar \n:"))
 
 if opción == 1:
-    print('******** REGISTRO DE NUEVO EJEMPLAR ********')
+    print('******** REGISTRO DE NUEVO LIBRO ********')
     titulo = input('Ingrese el nombre de la obra: ')
     autor = input('Ingrese el autor de la obra: ')
     genero = input('Ingrese el genero de la obra: ')
@@ -25,6 +25,6 @@ elif opción == 2:
     print("2. Reportes")
     print("3. Volver al menu de consultas y reportes")
 
-elif opción == 3:
-    print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE EJEMPLARES")
-break
+else:
+    print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE LIBROS")
+exit
