@@ -7,7 +7,7 @@ while True:
     print("2. Consultas y reportes")
     print("3. Salir")
 
-libros=[]
+libros = []
 opción = int(input("Seleccione el número de la acción que desea realizar \n:"))
 
 if opción == 1:
