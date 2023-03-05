@@ -25,6 +25,16 @@ elif opción == 2:
     print("2. Reportes")
     print("3. Volver al menu de consultas y reportes")
     
+if(Registrar_nuevo_libro == 1):
+print("Registrar nuevo libro 1")
+elif (Consultas_y_reportes == 2):
+         print("Consultas y reportes 2")
+elif (Salir == 3):
+             print("Salir 3")
+else:
+                 print("")
+
+
 else:
     print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE LIBROS")
 exit()
