@@ -84,7 +84,9 @@ elif opción == 2:
                 print("ISBN:", libro["isbn"])
                 print("Fecha de adquisición:", libro["fecha"])
         else:
-    
+    print("No se encontraron libros con ese ISBN.")
+    else:
+        print("Opción inválida.")
 
 else:
     print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE LIBROS")
