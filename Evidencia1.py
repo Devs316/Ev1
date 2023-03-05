@@ -107,40 +107,43 @@ elif opcion == "2":
             print("4.Reporte por año de publicacion")
             print("5.Volver al menu anterior")
         opcion_reportes =int(input("Opción\n: "))
-elif opcion_reportes == "1":
-
-    catalogo = []
-    autores = set() 
-    generos = set()
-    def consultar_catalogo():
-        if len(catalogo) == 0:
-            print("No hay libros registrados en el catálogo.")
-        else:
-            print("ID\tTÍTULO\t\t\tAUTOR\t\t\tGÉNERO\t\tAÑO\tISBN\t\tFECHA")
-            for libro in catalogo:
-                print(f"{libro['id']}\t{libro['titulo'][:20]}\t{libro['autor'][:20]}\t{libro['genero']}\t\t{libro['año']}\t{libro['isbn']}\t{libro['fecha']}")
+            
+    if opcion_reportes == "1":
+        catalogo = []
+        autores = set() 
+        generos = set()
+        def consultar_catalogo():
+            if len(catalogo) == 0:
+                print("No hay libros registrados en el catálogo.")
+            else:
+                print("ID\tTÍTULO\t\t\tAUTOR\t\t\tGÉNERO\t\tAÑO\tISBN\t\tFECHA")
+                for libro in catalogo:
+                    print(f"{libro['id']}\t{libro['titulo'][:20]}\t{libro['autor'][:20]}\t{libro['genero']}\t\t{libro['año']}\t{libro['isbn']}\t{libro['fecha']}")
+                
     
-autor_seleccionado = input("Ingrese el nombre del autor a consultar: ").upper()
-    if autor_seleccionado not in autores:
-        print(f"No se encontraron libros del autor '{autor_seleccionado}' en el catálogo.")
-    else:
-
-     print(f"Libros del autor '{autor_seleccionado}':")
-     print("ID\tTÍTULO\t\t\tAUTOR\t\t\tGÉNERO\t\tAÑO\tISBN\t\tFECHA")
+    elif opcion_reportes == "2" :
+        autor_seleccionado = input("Ingrese el nombre del autor a consultar: ").upper()
+        if autor_seleccionado not in autores:
+                    print(f"No se encontraron libros del autor '{autor_seleccionado}' en el catálogo.")
+        else:
+                print(f"Libros del autor '{autor_seleccionado}':")
+        print("ID\tTÍTULO\t\t\tAUTOR\t\t\tGÉNERO\t\tAÑO\tISBN\t\tFECHA")
         for libros in catalogo:
-            if libro['autor'] == autor_seleccionado:
-                print(f"{libro['id']}\t{libro['titulo'][:20]}\t{libro['autor'][:20]}\t{libro['genero']}\t\t{libro['anio']}\t{libro['isbn']}\t{libro['fecha']}")
-     def consultar_por_genero():
-    genero_seleccionado = input("Ingrese el género a consultar: ").upper()
-    if genero_seleccionado not in generos:
-        print(f"No se encontraron libros del género '{genero_seleccionado}' en el catálogo.")
-    else:
-
-    print(f"Libros del género '{genero_seleccionado}':")
-    print("ID\tTÍTULO\t\t\tAUTOR\t\t\tGÉNERO\t\tAÑO\tISBN\t\tFECHA")
-        for libro in catalogo:
-            if libro['genero'] == genero_seleccionado:
-
+                    if libro['autor'] == autor_seleccionado:
+                        print(f"{libro['id']}\t{libro['titulo'][:20]}\t{libro['autor'][:20]}\t{libro['genero']}\t\t{libro['anio']}\t{libro['isbn']}\t{libro['fecha']}")
+        
+        
+    elif opcion_reportes == "3" :
+        def consultar_por_genero():
+            genero_seleccionado = input("Ingrese el género a consultar: ").upper()
+        if genero_seleccionado not in generos:
+            print(f"No se encontraron libros del género '{genero_seleccionado}' en el catálogo.")
+        else:
+            print(f"Libros del género '{genero_seleccionado}':")
+            ("ID\tTÍTULO\t\t\tAUTOR\t\t\tGÉNERO\t\tAÑO\tISBN\t\tFECHA")
+            for libro in catalogo:
+                if libro['genero'] == genero_seleccionado:
+             break
 
 else:
         print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE LIBROS")
