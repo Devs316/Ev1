@@ -120,6 +120,12 @@ elif opcion_reportes == "1":
             for libro in catalogo:
                 print(f"{libro['id']}\t{libro['titulo'][:20]}\t{libro['autor'][:20]}\t{libro['genero']}\t\t{libro['año']}\t{libro['isbn']}\t{libro['fecha']}")
     
+autor_seleccionado = input("Ingrese el nombre del autor a consultar: ").upper()
+    if autor_seleccionado not in autores:
+        print(f"No se encontraron libros del autor '{autor_seleccionado}' en el catálogo.")
+    else:
+
+
 
 else:
         print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE LIBROS")
