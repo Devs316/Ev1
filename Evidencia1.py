@@ -43,6 +43,7 @@ if opción == 1:
     
 elif opción == 2:
     while True:   
+        print('******** CONSULTAS ********')
         print("1. Consulta de titulo")
         print("2. Reportes")
         print("3. Volver al menu de consultas y reportes")
