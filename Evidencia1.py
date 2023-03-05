@@ -8,7 +8,7 @@ while True:
    print("2. Consultas y reportes")
    print("3. Salir")
 
-   
+   libros = []
   def generar_id():
      return str(random.randint(100000, 999999))
    opcion = int(input("Seleccione el número de la acción que desea realizar \n:"))
