@@ -14,7 +14,7 @@ if opción == 1:
     titulo = input('Ingrese el nombre de la obra: ')
     autor = input('Ingrese el autor de la obra: ')
     genero = input('Ingrese el genero de la obra: ')
-    año_publicacion=input("Ingrese el año de publicacion: ")
+    año_publicacion = input("Ingrese el año de publicacion: ")
     año_publicacion = datetime.datatime.striptime(año_publicacion,"%Y").date()   
     isbn=input("Ingrese el ISBN de la obra: ") 
     fecha_adquisicion = input("Ingrese la fecha de su evento  (dd/mm/aaaa): ")
