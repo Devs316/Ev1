@@ -6,7 +6,8 @@ while True:
     print("1. Registrar nuevo libro")
     print("2. Consultas y reportes")
     print("3. Salir")
-   
+
+libros=[]
 opción = int(input("Seleccione el número de la acción que desea realizar \n:"))
 
 if opción == 1:
@@ -21,16 +22,15 @@ if opción == 1:
     fecha_adquisicion = datetime.datatime.striptime(fecha_adquisicion,"%d/%m/%Y").date()
 
 elif opción == 2:
-    print("1. Consulta de titulo")
-    print("2. Reportes")
-    print("3. Volver al menu de consultas y reportes")
-    
-if(Registrar_nuevo_libro == 1):
-print("Registrar nuevo libro 1")
-elif (Consultas_y_reportes == 2):
-         print("Consultas y reportes 2")
-elif (Salir == 3):
-             print("Salir 3")
+    while True:
+        submenu_opcion= int(input("Seleccione el numero de la opcion que quiere elegir \n:" ))
+        print("1. Consulta de titulo")
+        print("2. Reportes")
+        print("3. Volver al menu de consultas y reportes")
+
+        submenu_opcion == 1: 
+        print()
+        print("Ingrese el titulo de la obra: ")
 
 
 else:
