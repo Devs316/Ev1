@@ -47,12 +47,36 @@ elif opción == 2:
         print("Buscar libro por:")
         print("1. Título")
         print("2. ISBN")
-    opcion_submenu =int( input("Opción\n: "))
-    
+
     catalogo = []
-    autores = set()
-    generos = set()
-        
+autores = set()
+generos = set()
+def registrar_libro():
+    titulo = input("Ingrese el título del libro: ").upper()
+    autor = input("Ingrese el nombre del autor: ").upper()
+    autores.add(autor)
+    genero = input("Ingrese el género del libro: ").upper()
+    generos.add(genero)
+    anio = input("Ingrese el año de publicación: ")
+    isbn = input("Ingrese el ISBN del libro: ")
+    fecha = input("Ingrese la fecha de adquisición (dd/mm/aaaa): ")
+    ejemplar = {
+      "id": len(catalogo) + 1,
+        "titulo": titulo,
+        "autor": autor,
+        "genero": genero,
+        "anio": anio,
+        "isbn": isbn,
+        "fecha": fecha
+    }
+    catalogo.append(ejemplar)
+    print("El libro se ha registrado con éxito.")
+    def consultar_catalogo():
+    if len(catalogo) == 0:
+        print("No hay libros registrados en el catálogo.")
+    else:
+
+    opcion = input("Opción: ")
     if opcion == "1":
         titulo_busqueda = input("Ingrese el título: ").upper()
         libros_encontrados = []
