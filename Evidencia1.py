@@ -126,8 +126,20 @@ autor_seleccionado = input("Ingrese el nombre del autor a consultar: ").upper()
     else:
 
      print(f"Libros del autor '{autor_seleccionado}':")
+     print("ID\tTÍTULO\t\t\tAUTOR\t\t\tGÉNERO\t\tAÑO\tISBN\t\tFECHA")
+        for libros in catalogo:
+            if libro['autor'] == autor_seleccionado:
+                print(f"{libro['id']}\t{libro['titulo'][:20]}\t{libro['autor'][:20]}\t{libro['genero']}\t\t{libro['anio']}\t{libro['isbn']}\t{libro['fecha']}")
+     def consultar_por_genero():
+    genero_seleccionado = input("Ingrese el género a consultar: ").upper()
+    if genero_seleccionado not in generos:
+        print(f"No se encontraron libros del género '{genero_seleccionado}' en el catálogo.")
+    else:
 
-     
+    print(f"Libros del género '{genero_seleccionado}':")
+    print("ID\tTÍTULO\t\t\tAUTOR\t\t\tGÉNERO\t\tAÑO\tISBN\t\tFECHA")
+        for libro in catalogo:
+            if libro['genero'] == genero_seleccionado:
 
 
 else:
