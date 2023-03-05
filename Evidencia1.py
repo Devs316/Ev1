@@ -4,6 +4,11 @@ import random
 print("*" *10 + " BIENVENIDO " + "*" *10)
 
 while True:
+    print("Buscar ejemplar por:")
+    print("1. Título")
+    print("2. ISBN")
+    opcion = input("Opción: ")
+    if opcion == "1":
     print("1. Registrar nuevo libro")
     print("2. Consultas y reportes")
     print("3. Salir")
