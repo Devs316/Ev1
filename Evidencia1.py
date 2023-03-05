@@ -11,3 +11,5 @@ if opción == 1:
     print('******** REGISTRO PARA RESERVACION DE UNA SALA ********')
     nombre_evento = input('Ingrese el nombre de su evento: ')
     fecha_reservada = input("Ingrese la fecha de su evento  (dd/mm/aaaa): ")
+fecha_reservada = datetime.datatime.striptime(fecha_reseevada,"%d/%m/%Y").date()
+
