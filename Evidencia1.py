@@ -1,4 +1,5 @@
 import datetime
+import random
 
 print("*" *10 + " BIENVENIDO " + "*" *10)
 
@@ -8,6 +9,8 @@ while True:
     print("3. Salir")
 
 libros = []
+def generar_id():
+    return str(random.randint(100000, 999999))
 opción = int(input("Seleccione el número de la acción que desea realizar \n:"))
 
 if opción == 1:
@@ -20,7 +23,16 @@ if opción == 1:
     isbn=input("Ingrese el ISBN de la obra: ").upper
     fecha_adquisicion = input("Ingrese la fecha de su evento  (dd/mm/aaaa): ").upper
     fecha_adquisicion = datetime.datatime.striptime(fecha_adquisicion,"%d/%m/%Y").date()
-    
+    identificador = generar_id()
+    libro={
+        "id": identificador,
+        "titulo": titulo,
+        "autor": autor,
+        "genero": genero,
+        "anio": año_publicacion,
+        "isbn": isbn,
+        "fecha": fecha_adquisicion
+    }
 
 elif opción == 2:
     while True:   
