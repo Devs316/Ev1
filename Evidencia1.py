@@ -24,7 +24,7 @@ elif opción == 2:
     print("1. Consulta de titulo")
     print("2. Reportes")
     print("3. Volver al menu de consultas y reportes")
-    submenús = ['
+    
 else:
     print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE LIBROS")
 exit()
