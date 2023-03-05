@@ -75,9 +75,6 @@ elif opción == 2:
                 print("Fecha de adquisición:", libro["fecha"])
                 break 
 
-      while True: 
-   print("Registrar nuevo libro")
-
     else:
         print("No se encontraron libros con ese título.")
      
@@ -99,13 +96,10 @@ elif opcion == "2":
                 print("ISBN:", libro["isbn"])
                 print("Fecha de adquisición:", libro["fecha"])
                 break
-    while True: 
-   print("Registrar nuevo libro")
 
     else:
         print("No se encontraron libros con ese ISBN.")
 
-    while True:   
         if opcion_menu_consultas == 2:
             print('******** REPORTES ********')
             print("1.Catalogo")
@@ -152,8 +146,6 @@ elif opcion == "2":
                 if libro['genero'] == genero_seleccionado:
                      print(f"{libro['id']}\t{libro['titulo'][:20]}\t{libro['autor'][:20]}\t{libro['genero']}\t\t{libro['anio']}\t{libro['isbn']}\t{libro['fecha']}")
 
-else:
+    else:
         print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE LIBROS")
-while True: 
-   print("Registrar nuevo libro")
-exit()
+    exit()
