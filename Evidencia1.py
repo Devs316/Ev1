@@ -43,6 +43,13 @@ if opción == 1:
     
 elif opción == 2:
     while True:   
+        print('******** CONSULTAS Y REPORTES********')
+        print("1. Consultas")
+        print("2. Reportes")
+        print("3. Volver al menu principal")
+    opción_menu_consultas= int(input("Seleccione el número de la acción que desea realizar \n:"))
+    
+    if opcion_menu_consultas == 1:
         print('******** CONSULTAS ********')
         print("Buscar libro por:")
         print("1. Título")
@@ -92,14 +99,15 @@ elif opcion == "2":
         print("No se encontraron libros con ese ISBN.")
 
     while True:   
-        print('******** REPORTES ********')
-        print("1.Catalogo")
-        print("2.Reporte por autor")
-        print("3.Reporte por genero")
-        print("4.Reporte por año de publicacion")
-        print("5.Volver al menu anterior")
-    opcion_reportes =int(input("Opción\n: "))
-elif opcion == "1":
+        if opcion_menu_consultas == 2:
+            print('******** REPORTES ********')
+            print("1.Catalogo")
+            print("2.Reporte por autor")
+            print("3.Reporte por genero")
+            print("4.Reporte por año de publicacion")
+            print("5.Volver al menu anterior")
+        opcion_reportes =int(input("Opción\n: "))
+elif opcion_reportes == "1":
 
     catalogo = []
     autores = set() 
