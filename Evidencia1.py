@@ -21,3 +21,8 @@ if opción == 1:
     dia_actual = fecha_actual.day
     mes_actual = fecha_actual.month
     año_reseevado = fecha_actual.year
+
+dia_valido = dia_reservado - dia_actual
+
+tupla_reservacion = (mes_reservado, dia_reservado, año_reservado)
+tupla_actual = (mes_actual, dia_actual, año_actual)
