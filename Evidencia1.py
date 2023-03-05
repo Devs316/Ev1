@@ -36,6 +36,7 @@ if opción == 1:
     libros.append(libro)
     print("Libro registrado con éxito.")
     print("ID del libro:", identificador)
+    
 elif opción == 2:
     while True:   
         print("1. Consulta de titulo")
