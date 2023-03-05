@@ -9,9 +9,15 @@
    print("3. Salir")
 
    libros = []
+<<<<<<< HEAD
+    def generar_id():
+     return str(random.randint(100000, 999999))
+    opcion = int(input("Seleccione el número de la acción que desea realizar \n:"))
+=======
    def generar_id():
    return str(random.randint(100000, 999999))
    opcion = int(input("Seleccione el número de la acción que desea realizar \n:"))
+>>>>>>> 4f431b5ab8b94c3fceee964f4ffda99284248bb8
 
    if opcion == 1:
    print('******** REGISTRO DE NUEVO LIBRO ********')
