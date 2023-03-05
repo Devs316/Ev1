@@ -9,6 +9,11 @@ while True:
     print("2. ISBN")
     opcion = input("Opción: ")
     if opcion == "1":
+    titulo_busqueda = input("Ingrese el título: ").upper()
+        libros_encontrados = []
+        for libros in libros:
+            if libros["titulo"] == titulo_busqueda:
+                libros_encontrados.append(ejemplar)
     print("1. Registrar nuevo libro")
     print("2. Consultas y reportes")
     print("3. Salir")
