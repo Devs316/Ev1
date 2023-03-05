@@ -20,19 +20,15 @@ if opción == 1:
     isbn=input("Ingrese el ISBN de la obra: ") 
     fecha_adquisicion = input("Ingrese la fecha de su evento  (dd/mm/aaaa): ")
     fecha_adquisicion = datetime.datatime.striptime(fecha_adquisicion,"%d/%m/%Y").date()
+    
 
-elif opción == 2:
+if opción == 2:
     while True:
-        submenu_opcion= int(input("Seleccione el numero de la opcion que quiere elegir \n:" ))
+        submenu_opcion = int(input("Seleccione el numero de la opcion que quiere elegir \n:" ))
         print("1. Consulta de titulo")
         print("2. Reportes")
         print("3. Volver al menu de consultas y reportes")
-
-        submenu_opcion == 1: 
-        print()
-        print("Ingrese el titulo de la obra: ")
-
-
+        
 else:
     print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE LIBROS")
 exit()
