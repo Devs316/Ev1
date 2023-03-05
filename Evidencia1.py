@@ -125,6 +125,9 @@ autor_seleccionado = input("Ingrese el nombre del autor a consultar: ").upper()
         print(f"No se encontraron libros del autor '{autor_seleccionado}' en el catálogo.")
     else:
 
+     print(f"Libros del autor '{autor_seleccionado}':")
+
+     
 
 
 else:
