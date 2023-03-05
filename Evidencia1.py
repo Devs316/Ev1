@@ -4,51 +4,51 @@ import random
 print("*" *10 + " BIENVENIDO " + "*" *10)
 
 while True:
-    print("1. Registrar nuevo libro")
+    print("1. Registrar nuevo libro") 
     print("2. Consultas y reportes")
     print("3. Salir")
 
 libros = []
 def generar_id():
     return str(random.randint(100000, 999999))
-opción = int(input("Seleccione el número de la acción que desea realizar \n:"))
+opcion = int(input("Seleccione el número de la acción que desea realizar \n:"))
 
-if opción == 1:
+if opcion == 1:
     print('******** REGISTRO DE NUEVO LIBRO ********')
     titulo = input('Ingrese el nombre de la obra: ').upper()
     autor = input('Ingrese el autor de la obra: ').upper()
     genero = input('Ingrese el genero de la obra: ').upper()
-    año_publicacion = input("Ingrese el año de publicacion: ").upper()
-    año_publicacion = datetime.datatime.striptime(año_publicacion,"%Y").date()   
+    anio_publicacion = input("Ingrese el año de publicacion: ").upper()
+    anio_publicacion = datetime.datetime.striptime(anio_publicacion,"%Y").date()   
     isbn=input("Ingrese el ISBN de la obra: ").upper
     fecha_adquisicion = input("Ingrese la fecha de su evento  (dd/mm/aaaa): ").upper
-    fecha_adquisicion = datetime.datatime.striptime(fecha_adquisicion,"%d/%m/%Y").date()
+    fecha_adquisicion = datetime.datetime.striptime(fecha_adquisicion,"%d/%m/%Y").date()
     identificador = generar_id()
     libro={
         "id": identificador,
         "titulo": titulo,
         "autor": autor,
         "genero": genero,
-        "año": año_publicacion,
+        "año": anio_publicacion,
         "isbn": isbn,
         "fecha": fecha_adquisicion
     }
-    libros.append(elibro)
+    libros.append(libro)
     print("Libro registrado con éxito.")
     print("ID del libro:", identificador)
 
     libros.append(libro)
     print("Libro registrado con éxito.")
     print("ID del libro:", identificador)
-    
 
-elif opción == 2:
+
+elif opcion == 2:
     while True:   
         print('******** CONSULTAS Y REPORTES********')
         print("1. Consultas")
         print("2. Reportes")
         print("3. Volver al menu principal")
-    opción_menu_consultas= int(input("Seleccione el número de la acción que desea realizar \n:"))
+    opcion_menu_consultas= int(input("Seleccione el número de la acción que desea realizar \n:"))
     
     if opcion_menu_consultas == 1:
         print('******** CONSULTAS ********')
@@ -62,7 +62,7 @@ elif opción == 2:
         titulo_busqueda = input("Ingrese el título: ").upper()
         libros_encontrados = []
         for libro in libros:
-            if libros["titulo"] == titulo_busqueda:
+            if libro["Titulo"] == titulo_busqueda:
                 libros_encontrados.append(libro)
     if libros_encontrados:
             print("libros encontrados:")
@@ -138,15 +138,15 @@ else:
         
     elif opcion_reportes == "3" :
         def consultar_por_genero():
-            genero_seleccionado = input("Ingrese el género a consultar: ").upper()
-        if genero_seleccionado not in generos:
-            print(f"No se encontraron libros del género '{genero_seleccionado}' en el catálogo.")
+            consultar_por_genero = input("Ingrese el género a consultar: ").upper()
+        if consultar_por_genero not in generos:
+            print(f"No se encontraron libros del género '{genero}' en el catálogo.")
             
         else:
-            print(f"Libros del género '{genero_seleccionado}':")
-            ("ID\tTÍTULO\t\t\tAUTOR\t\t\tGÉNERO\t\tAÑO\tISBN\t\tFECHA")
+            print(f"Libros del género '{genero}':")
+            print("ID\tTÍTULO\t\t\tAUTOR\t\t\tGÉNERO\t\tAÑO\tISBN\t\tFECHA")
             for libro in catalogo:
-                if libro['genero'] == genero_seleccionado:
+                if libro['genero'] == genero:
                     print(f"{libro['id']}\t{libro['titulo'][:20]}\t{libro['autor'][:20]}\t{libro['genero']}\t\t{libro['anio']}\t{libro['isbn']}\t{libro['fecha']}")
                     break
     else:
