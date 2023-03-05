@@ -143,7 +143,7 @@ elif opcion == "2":
             ("ID\tTÍTULO\t\t\tAUTOR\t\t\tGÉNERO\t\tAÑO\tISBN\t\tFECHA")
             for libro in catalogo:
                 if libro['genero'] == genero_seleccionado:
-             break
+                     print(f"{libro['id']}\t{libro['titulo'][:20]}\t{libro['autor'][:20]}\t{libro['genero']}\t\t{libro['anio']}\t{libro['isbn']}\t{libro['fecha']}")
 
 else:
         print("ADIOS,GRACIAS POR VISITAR EL CATALOGO DE LIBROS")
