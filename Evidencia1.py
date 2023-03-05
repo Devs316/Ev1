@@ -47,12 +47,12 @@ elif opción == 2:
         print("Buscar libro por:")
         print("1. Título")
         print("2. ISBN")
-
+    opcion_submenu =int( input("Opción\n: "))
+    
     catalogo = []
-autores = set()
-generos = set()
+    autores = set()
+    generos = set()
         
-    opcion = input("Opción: ")
     if opcion == "1":
         titulo_busqueda = input("Ingrese el título: ").upper()
         libros_encontrados = []
