@@ -33,6 +33,10 @@ if opción == 1:
         "isbn": isbn,
         "fecha": fecha_adquisicion
     }
+    ejemplares.append(ejemplar)
+    print("Ejemplar registrado con éxito.")
+    print("ID del ejemplar:", identificador)
+
     libros.append(libro)
     print("Libro registrado con éxito.")
     print("ID del libro:", identificador)
