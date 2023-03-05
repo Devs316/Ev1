@@ -47,6 +47,10 @@ elif opción == 2:
         print("Buscar libro por:")
         print("1. Título")
         print("2. ISBN")
+
+    catalogo = []
+autores = set()
+generos = set()
         
     opcion = input("Opción: ")
     if opcion == "1":
