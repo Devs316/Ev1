@@ -1,0 +1,10 @@
+("*"*30)
+print("*"*9 + " BIENVENIDO " + "*"*9)
+while True:
+ print("1. Registrar una reserva")
+ print("2. Editar un evento ya existente")
+ print("3. Consulta tus reservas")
+ print("4. Registrate como nuevo cliente")
+ print("5. Registra una sala")
+ print("6. Salir")
+ opcion = int(input("Seleccione el numero de la accion que quiere realizar \n:")) 
