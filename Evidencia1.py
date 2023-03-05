@@ -43,7 +43,7 @@ if opción == 1:
     
 elif opción == 2:
     while True:   
-        print('******** CONSULTAS ********')
+        print('******** CONSULTAS Y REPORTES********')
         print("Buscar libro por:")
         print("1. Título")
         print("2. ISBN")
